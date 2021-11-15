@@ -18,7 +18,7 @@ def browser(request):
         print("\nstart chrome browser for test..")
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_argument("--remote-debugging-port=9222")
-        chrome_options.add_experimental_option('prefs', {'intl.accept_languages': browser_lang})
+        chrome_options.add_experimental_option('prefs', {'intl.accept_languages': language})
         browser = webdriver.Chrome(options=chrome_options)
     elif browser_name == "firefox":
         print("\nstart firefox browser for test..")
